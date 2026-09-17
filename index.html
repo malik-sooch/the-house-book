@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The House Book - A Home in Troy, Michigan</title>
+<style>
+  :root{--cream:#faf6f0;--ink:#3d3833;--warm:#b5764a;--soft:#8a7f72;--card:#ffffff;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:Georgia,'Times New Roman',serif;background:var(--cream);color:var(--ink);line-height:1.6;}
+  h1,h2,h3{font-weight:normal;}
+  .hero{position:relative;height:88vh;min-height:420px;background:url('out-2.jpg') center 60%/cover no-repeat;display:flex;align-items:flex-end;}
+  .hero .veil{position:absolute;inset:0;background:linear-gradient(to top,rgba(30,25,20,.72),rgba(30,25,20,0) 55%);}
+  .hero .words{position:relative;padding:48px 6vw 56px;color:#fff;}
+  .hero h1{font-size:clamp(2.4rem,6vw,4.2rem);letter-spacing:.5px;}
+  .hero p{font-size:clamp(1rem,2.2vw,1.3rem);max-width:620px;margin-top:10px;color:#f3e9de;}
+  nav{position:sticky;top:0;background:rgba(250,246,240,.96);border-bottom:1px solid #e5ddd2;z-index:50;text-align:center;padding:10px 8px;}
+  nav a{color:var(--warm);text-decoration:none;margin:0 12px;font-size:.95rem;letter-spacing:.4px;white-space:nowrap;}
+  nav a:hover{text-decoration:underline;}
+  section{max-width:1080px;margin:0 auto;padding:64px 5vw 20px;}
+  .kicker{color:var(--warm);text-transform:uppercase;letter-spacing:2.5px;font-size:.8rem;font-family:Verdana,sans-serif;}
+  h2{font-size:clamp(1.7rem,3.6vw,2.4rem);margin:8px 0 14px;}
+  .lede{color:var(--soft);max-width:680px;margin-bottom:28px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;}
+  .grid img{width:100%;height:230px;object-fit:cover;border-radius:10px;cursor:pointer;box-shadow:0 2px 10px rgba(61,56,51,.10);transition:transform .25s ease;}
+  .grid img:hover{transform:scale(1.02);}
+  figure{margin:0;}
+  figcaption{font-size:.85rem;color:var(--soft);padding:6px 2px 4px;font-family:Verdana,sans-serif;}
+  .chapter{margin:34px 0 8px;padding:22px 24px;background:var(--card);border-left:4px solid var(--warm);border-radius:0 12px 12px 0;box-shadow:0 2px 8px rgba(61,56,51,.06);}
+  .chapter h3{color:var(--warm);font-size:1.25rem;margin-bottom:6px;}
+  .chapter p{color:var(--soft);}
+  .plans-group{margin-bottom:34px;}
+  .plans-group h3{font-size:1.2rem;margin-bottom:4px;}
+  .plans-group .note{font-size:.9rem;color:var(--soft);font-family:Verdana,sans-serif;margin-bottom:12px;}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;}
+  .card{background:var(--card);border-radius:12px;padding:22px;box-shadow:0 2px 10px rgba(61,56,51,.08);}
+  .card h3{color:var(--warm);font-size:1.15rem;margin-bottom:8px;}
+  .card p{color:var(--soft);font-size:.95rem;}
+  .videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;}
+  video{width:100%;border-radius:10px;box-shadow:0 2px 10px rgba(61,56,51,.12);background:#000;}
+  .vlabel{font-size:.85rem;color:var(--soft);font-family:Verdana,sans-serif;padding:6px 2px;}
+  .intro-letter{background:var(--card);border-radius:14px;padding:30px 32px;box-shadow:0 2px 12px rgba(61,56,51,.08);font-size:1.08rem;color:var(--ink);max-width:760px;margin:0 auto 10px;}
+  .intro-letter em{color:var(--warm);}
+  footer{text-align:center;color:var(--soft);font-size:.85rem;padding:50px 20px 40px;font-family:Verdana,sans-serif;}
+  #lightbox{position:fixed;inset:0;background:rgba(25,20,16,.92);display:none;align-items:center;justify-content:center;z-index:100;cursor:zoom-out;}
+  #lightbox img{max-width:94vw;max-height:92vh;border-radius:8px;}
+  @media (max-width:600px){ nav a{margin:0 7px;font-size:.82rem;} }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="veil"></div>
+  <div class="words">
+    <h1>The House Book</h1>
+    <p>The story of a house in Troy, Michigan: what it was, what it became, and all the projects still waiting for you.</p>
+  </div>
+</div>
+
+<nav>
+  <a href="#story">The Story</a>
+  <a href="#today">The House Today</a>
+  <a href="#plans">The Plans</a>
+  <a href="#projects">Project Ideas</a>
+  <a href="#videos">Videos</a>
+</nav>
+
+<section>
+  <div class="intro-letter">
+    This is your house, gathered in one place: the listing photos from before anything changed, the renovation as it happened,
+    every room as it looks today, the original design drawings with the exact materials and fixtures, and a few ideas for
+    whatever you want to do next. Any time you wonder <em>"what did that room look like?"</em> or <em>"what tile did we pick?"</em> - it is here.
+  </div>
+</section>
+
+<section id="story">
+  <span class="kicker">Chapter One</span>
+  <h2>The Story So Far</h2>
+  <p class="lede">Every house keeps a diary. This one is written in photographs.</p>
+
+  <div class="chapter">
+    <h3>The Listing - how it started</h3>
+    <p>The house as it was when you found it: good bones, big windows, a yard full of trees, and a kitchen from another decade.</p>
+  </div>
+  <div class="grid">
+    <figure><img src="before-6.jpg" alt="Front of the house from the original listing" loading="lazy"><figcaption>The house, as listed</figcaption></figure>
+    <figure><img src="before-1.jpg" alt="Original kitchen with dark wood cabinets" loading="lazy"><figcaption>The old kitchen</figcaption></figure>
+    <figure><img src="before-2.jpg" alt="Original living room with fireplace" loading="lazy"><figcaption>The living room then</figcaption></figure>
+    <figure><img src="before-10.jpg" alt="Original entry and staircase" loading="lazy"><figcaption>The entry then</figcaption></figure>
+    <figure><img src="before-12.jpg" alt="Original bathroom with brown tile" loading="lazy"><figcaption>One of the old bathrooms</figcaption></figure>
+    <figure><img src="before-13.jpg" alt="Original tub with purple mosaic tile" loading="lazy"><figcaption>The purple tile tub</figcaption></figure>
+    <figure><img src="before-3.jpg" alt="Original bedroom" loading="lazy"><figcaption>A bedroom then</figcaption></figure>
+    <figure><img src="before-7.jpg" alt="Original basement utility area" loading="lazy"><figcaption>The basement then</figcaption></figure>
+    <figure><img src="before-9.jpg" alt="Original living room with bay windows" loading="lazy"><figcaption>The bay windows then</figcaption></figure>
+    <figure><img src="before-8.jpg" alt="Original laundry area" loading="lazy"><figcaption>The laundry corner then</figcaption></figure>
+    <figure><img src="before-10b.jpg" alt="Deck before renovation" loading="lazy" onerror="this.closest('figure').style.display='none'"><figcaption>The deck then</figcaption></figure>
+    <figure><img src="before-5.jpg" alt="Backyard before renovation" loading="lazy"><figcaption>The backyard then</figcaption></figure>
+  </div>
+
+  <div class="chapter">
+    <h3>The Renovation - winter 2025 to fall 2025</h3>
+    <p>Walls came down, the main floor opened up, and the kitchen and bathrooms were rebuilt from the studs. These were taken along the way, from the first demo day to the last cabinet pull.</p>
+  </div>
+  <div class="grid">
+    <figure><img src="during-3.jpg" alt="House in early spring before work began" loading="lazy"><figcaption>Before the work began</figcaption></figure>
+    <figure><img src="during-5.jpg" alt="Framing inside the main floor" loading="lazy"><figcaption>Framing, May 2025</figcaption></figure>
+    <figure><img src="during-6.jpg" alt="New interior walls going up" loading="lazy"><figcaption>New walls going up</figcaption></figure>
+    <figure><img src="during-7.jpg" alt="Opened up main floor with beams" loading="lazy"><figcaption>The main floor, opened up</figcaption></figure>
+    <figure><img src="during-8.jpg" alt="Wide view of the renovation in progress" loading="lazy"><figcaption>Seeing the new shape of it</figcaption></figure>
+    <figure><img src="during-9.jpg" alt="Basement stripped for work" loading="lazy"><figcaption>The basement, stripped down</figcaption></figure>
+    <figure><img src="during-10.jpg" alt="Kitchen cabinets being installed" loading="lazy"><figcaption>Cabinets going in, August 2025</figcaption></figure>
+    <figure><img src="during-11.jpg" alt="Kitchen taking shape" loading="lazy"><figcaption>The kitchen taking shape</figcaption></figure>
+    <figure><img src="during-12.jpg" alt="Bathroom mid-renovation" loading="lazy"><figcaption>A bathroom, mid-tile</figcaption></figure>
+    <figure><img src="during-13.jpg" alt="New tile floor being laid" loading="lazy"><figcaption>New floors</figcaption></figure>
+    <figure><img src="during-14.jpg" alt="Exterior near the end of the renovation" loading="lazy"><figcaption>Nearly there</figcaption></figure>
+  </div>
+
+  <div class="chapter">
+    <h3>Move-In - June 2026</h3>
+    <p>Boxes, furniture finding its place, and a house that finally looks like the drawings. This is the house as it is right now.</p>
+  </div>
+</section>
+
+<section id="today">
+  <span class="kicker">Chapter Two</span>
+  <h2>The House Today</h2>
+  <p class="lede">Every room, photographed in June 2026. Some are finished, some are still unpacking, all of them are yours.</p>
+
+  <div class="chapter"><h3>Kitchen and Dining</h3><p>The heart of the renovation: white perimeter cabinets, a gray island, quartz counters, and room for a full table.</p></div>
+  <div class="grid">
+    <figure><img src="kitchen-1.jpg" alt="Kitchen and dining room" loading="lazy"><figcaption>From the dining table toward the kitchen</figcaption></figure>
+    <figure><img src="kitchen-2.jpg" alt="Dining room window" loading="lazy"><figcaption>Dinner with a view of the green</figcaption></figure>
+    <figure><img src="kitchen-3.jpg" alt="Dining room toward living room" loading="lazy"><figcaption>One long, open room</figcaption></figure>
+  </div>
+
+  <div class="chapter"><h3>Living Room</h3><p>Two stories of light, the fireplace, and sliding doors to the deck.</p></div>
+  <div class="grid">
+    <figure><img src="living-1.jpg" alt="Living room with wall of windows" loading="lazy"><figcaption>The wall of windows</figcaption></figure>
+    <figure><img src="living-2.jpg" alt="Living room fireplace corner" loading="lazy"><figcaption>The fireplace corner</figcaption></figure>
+  </div>
+
+  <div class="chapter"><h3>Entry and Stairs</h3><p>The front door with its stained glass, the bridge upstairs, and the staircase that ties it all together.</p></div>
+  <div class="grid">
+    <figure><img src="entry-1.jpg" alt="Front door with stained glass" loading="lazy"><figcaption>The front door</figcaption></figure>
+    <figure><img src="entry-2.jpg" alt="Catwalk above the entry" loading="lazy"><figcaption>The bridge above the entry</figcaption></figure>
+    <figure><img src="entry-3.jpg" alt="View across the catwalk" loading="lazy"><figcaption>Across the bridge</figcaption></figure>
+    <figure><img src="entry-4.jpg" alt="Stairs and bridge from above" loading="lazy"><figcaption>Looking down from the bridge</figcaption></figure>
+    <figure><img src="entry-5.jpg" alt="Hallway with stained glass window" loading="lazy"><figcaption>The hallway window</figcaption></figure>
+    <figure><img src="entry-6.jpg" alt="Wooden staircase" loading="lazy"><figcaption>The staircase</figcaption></figure>
+  </div>
+
+  <div class="chapter"><h3>Bedrooms</h3><p>Still settling in - boxes and all.</p></div>
+  <div class="grid">
+    <figure><img src="bed-1.jpg" alt="Green bedroom" loading="lazy"><figcaption>The green room</figcaption></figure>
+    <figure><img src="bed-5.jpg" alt="Green bedroom wide view" loading="lazy"><figcaption>The green room, wide</figcaption></figure>
+    <figure><img src="bed-2.jpg" alt="Bedroom with couch" loading="lazy"><figcaption>A room with a view</figcaption></figure>
+    <figure><img src="bed-3.jpg" alt="Bedroom" loading="lazy"><figcaption>The bedroom</figcaption></figure>
+    <figure><img src="bed-4.jpg" alt="Bedroom with bench" loading="lazy"><figcaption>Still unpacking</figcaption></figure>
+    <figure><img src="bed-6.jpg" alt="Reading chair corner" loading="lazy"><figcaption>The reading chair</figcaption></figure>
+  </div>
+
+  <div class="chapter"><h3>Bathrooms</h3><p>All rebuilt: new tile, new glass, new everything.</p></div>
+  <div class="grid">
+    <figure><img src="bath-1.jpg" alt="Upstairs bathroom with double vanity" loading="lazy"><figcaption>The upstairs bathroom</figcaption></figure>
+    <figure><img src="bath-2.jpg" alt="Glass shower" loading="lazy"><figcaption>The glass shower</figcaption></figure>
+    <figure><img src="bath-3.jpg" alt="Hall bathroom" loading="lazy"><figcaption>The hall bath</figcaption></figure>
+    <figure><img src="bath-4.jpg" alt="Shower and tub detail" loading="lazy"><figcaption>Tub and shower detail</figcaption></figure>
+    <figure><img src="bath-5.jpg" alt="Bathroom vanity" loading="lazy"><figcaption>Vanity</figcaption></figure>
+    <figure><img src="bath-6.jpg" alt="Master shower" loading="lazy"><figcaption>The master shower</figcaption></figure>
+    <figure><img src="laundry-1.jpg" alt="Powder room and laundry" loading="lazy"><figcaption>Powder room and laundry</figcaption></figure>
+  </div>
+
+  <div class="chapter"><h3>Basement</h3><p>A huge, open, daylight basement - mostly unfinished and full of possibility.</p></div>
+  <div class="grid">
+    <figure><img src="basement-1.jpg" alt="Big open basement room" loading="lazy"><figcaption>The big room downstairs</figcaption></figure>
+    <figure><img src="basement-2.jpg" alt="Basement wide view" loading="lazy"><figcaption>All that space</figcaption></figure>
+    <figure><img src="basement-3.jpg" alt="Unfinished side of the basement" loading="lazy"><figcaption>The unfinished side</figcaption></figure>
+    <figure><img src="basement-4.jpg" alt="Basement storage shelves" loading="lazy"><figcaption>Storage, ready</figcaption></figure>
+  </div>
+
+  <div class="chapter"><h3>Outside</h3><p>The yard, the deck, the trees.</p></div>
+  <div class="grid">
+    <figure><img src="out-1.jpg" alt="Front walk and entry" loading="lazy"><figcaption>The front walk</figcaption></figure>
+    <figure><img src="out-3.jpg" alt="Front yard" loading="lazy"><figcaption>The front yard</figcaption></figure>
+    <figure><img src="out-4.jpg" alt="Side path" loading="lazy"><figcaption>The side path</figcaption></figure>
+    <figure><img src="out-5.jpg" alt="Backyard path" loading="lazy"><figcaption>The path around back</figcaption></figure>
+    <figure><img src="out-6.jpg" alt="Back of the house" loading="lazy"><figcaption>The back of the house</figcaption></figure>
+    <figure><img src="out-7.jpg" alt="Backyard" loading="lazy"><figcaption>The backyard</figcaption></figure>
+    <figure><img src="out-8.jpg" alt="Deck" loading="lazy"><figcaption>The deck</figcaption></figure>
+    <figure><img src="out-9.jpg" alt="Deck and sliding doors" loading="lazy"><figcaption>Deck, off the living room</figcaption></figure>
+    <figure><img src="out-10.jpg" alt="Garage exterior" loading="lazy"><figcaption>The garage</figcaption></figure>
+    <figure><img src="out-11.jpg" alt="Side of the house with brick path" loading="lazy"><figcaption>Around the side</figcaption></figure>
+    <figure><img src="garage-1.jpg" alt="Garage interior" loading="lazy"><figcaption>Inside the garage, mid move-in</figcaption></figure>
+    <figure><img src="hall-1.jpg" alt="Carved wooden panel" loading="lazy"><figcaption>The carved panel</figcaption></figure>
+    <figure><img src="hall-2.jpg" alt="Hallway with painting" loading="lazy"><figcaption>The hallway</figcaption></figure>
+  </div>
+</section>
+
+<section id="plans">
+  <span class="kicker">Chapter Three</span>
+  <h2>The Plans</h2>
+  <p class="lede">The original design drawings from the renovation, including the exact cabinets, counters, tile, and fixtures that went in. Handy whenever something needs matching, repairing, or reimagining. Full versions of these drawings live in the family Drive folder.</p>
+
+  <div class="plans-group">
+    <h3>The Kitchen</h3>
+    <div class="note">Legacy Crafted Signature Series cabinets (Casa Blanca perimeter, Active Gray island), MSI Quartz Concerto counters, glass ice backsplash tile, Jeffrey Alexander Leyton pulls.</div>
+    <div class="grid">
+      <figure><img src="plans-kitchen-1.jpg" alt="Kitchen design renders" loading="lazy"><figcaption>The kitchen, as designed</figcaption></figure>
+      <figure><img src="plans-kitchen-2.jpg" alt="Kitchen render" loading="lazy"><figcaption>The island render</figcaption></figure>
+      <figure><img src="plans-kitchen-3.jpg" alt="Kitchen dimensioned plan" loading="lazy"><figcaption>Dimensions and layout</figcaption></figure>
+      <figure><img src="plans-kitchen-4.jpg" alt="Kitchen elevations" loading="lazy"><figcaption>Cabinet elevations</figcaption></figure>
+      <figure><img src="plans-kitchen-5.jpg" alt="Kitchen materials" loading="lazy"><figcaption>The materials list</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="plans-group">
+    <h3>Master Shower Bathroom</h3>
+    <div class="note">Delta Trinsic and Emerge fixtures, rain shower head, polished tile, quartz counters.</div>
+    <div class="grid">
+      <figure><img src="plans-shower-1.jpg" alt="Master bathroom plan" loading="lazy"><figcaption>Layout and renders</figcaption></figure>
+      <figure><img src="plans-shower-2.jpg" alt="Master bathroom elevations" loading="lazy"><figcaption>Elevations</figcaption></figure>
+      <figure><img src="plans-shower-3.jpg" alt="Master bathroom materials" loading="lazy"><figcaption>Materials</figcaption></figure>
+      <figure><img src="plans-shower-4.jpg" alt="Master bathroom fixtures" loading="lazy"><figcaption>The fixtures</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="plans-group">
+    <h3>Hall Tub Bathroom</h3>
+    <div class="grid">
+      <figure><img src="plans-tub-1.jpg" alt="Hall tub bathroom plan" loading="lazy"><figcaption>Layout and renders</figcaption></figure>
+      <figure><img src="plans-tub-2.jpg" alt="Hall tub bathroom elevations" loading="lazy"><figcaption>Elevations</figcaption></figure>
+      <figure><img src="plans-tub-3.jpg" alt="Hall tub bathroom fixtures" loading="lazy"><figcaption>Fixtures and materials</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="plans-group">
+    <h3>Upstairs Bath and Closet</h3>
+    <div class="grid">
+      <figure><img src="plans-bath2-1.jpg" alt="Upstairs bathroom plan" loading="lazy"><figcaption>Layout</figcaption></figure>
+      <figure><img src="plans-bath2-2.jpg" alt="Upstairs bathroom elevations" loading="lazy"><figcaption>Elevations</figcaption></figure>
+      <figure><img src="plans-bath2-3.jpg" alt="Upstairs bathroom fixtures" loading="lazy"><figcaption>Fixtures and materials</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="plans-group">
+    <h3>Powder Room and Laundry</h3>
+    <div class="grid">
+      <figure><img src="plans-powder-1.jpg" alt="Powder room and laundry plan" loading="lazy"><figcaption>Layout and renders</figcaption></figure>
+      <figure><img src="plans-powder-2.jpg" alt="Powder room elevations" loading="lazy"><figcaption>Elevations</figcaption></figure>
+      <figure><img src="plans-powder-3.jpg" alt="Powder room materials" loading="lazy"><figcaption>Materials</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <span class="kicker">Chapter Four</span>
+  <h2>Project Ideas</h2>
+  <p class="lede">The fun part. A few things this house is quietly asking for, whenever you are ready.</p>
+  <div class="cards">
+    <div class="card"><h3>Finish the basement</h3><p>It is enormous, it has daylight windows, and the renovation already gave it a clean slate. A family room, a craft room, a guest suite - it could be all three.</p></div>
+    <div class="card"><h3>Deck season</h3><p>The deck sits off the living room under the trees. A couple of chairs, string lights, and a container garden and it becomes the best room of the house from May to October.</p></div>
+    <div class="card"><h3>Garden beds along the walk</h3><p>The front and side paths are lined with planting space that is mostly mulch right now. Raised beds or perennials would change the whole approach to the house.</p></div>
+    <div class="card"><h3>The garage workshop</h3><p>Once the move-in boxes are gone, the garage has room for a real workbench wall. The shelves are already there.</p></div>
+    <div class="card"><h3>A reading nook on the bridge</h3><p>The upstairs bridge overlooks the living room and catches the best light in the house. A chair and a lamp and it is a library.</p></div>
+    <div class="card"><h3>Closet built-ins</h3><p>The closet drawings from the renovation show what was planned. Adding the built-ins would finish what the designers started.</p></div>
+  </div>
+</section>
+
+<section id="videos">
+  <span class="kicker">Archive</span>
+  <h2>Walkthrough Videos</h2>
+  <p class="lede">Filmed in January 2025, before the renovation began - the house as it was, room by room.</p>
+  <div class="videos">
+    <div><video controls preload="metadata" src="video-upstairs-before.mp4"></video><div class="vlabel">Upstairs tour, before (2:28)</div></div>
+    <div><video controls preload="metadata" src="video-basement-before.mp4"></video><div class="vlabel">Basement tour, before (2:15)</div></div>
+    <div><video controls preload="metadata" src="video-deck-before.mp4"></video><div class="vlabel">The deck in winter (0:08)</div></div>
+    <div><video controls preload="metadata" src="video-stairs-before.mp4"></video><div class="vlabel">The staircase, before (0:06)</div></div>
+  </div>
+</section>
+
+<footer>
+  Made with love, for you. The street address is kept off this page on purpose.<br>
+  Photos: the original listing, the renovation (2025), and the house today (June 2026).
+</footer>
+
+<div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
+<script>
+  document.querySelectorAll('.grid img').forEach(function(im){
+    im.addEventListener('click',function(){
+      document.getElementById('lbimg').src=im.src;
+      document.getElementById('lightbox').style.display='flex';
+    });
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.getElementById('lightbox').style.display='none';}});
+</script>
+
+</body>
+</html>
